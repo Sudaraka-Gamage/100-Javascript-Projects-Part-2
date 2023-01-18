@@ -1,4 +1,3 @@
-# 100-Javascript-Projects-Part-2
 # custom-select-menu
 
 # custom-video-player
