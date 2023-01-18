@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,
+            initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" 
+        />
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+        <title>Image Editor-JS</title>
+    </head>
+    <body>
+        <!--  Main Container   -->
+        <div class="container disable">
+            <h2>Easy Image Editor</h2>
+
+            <!-- Main > Wrapper    -->
+            <div class="wrapper">
+                
+                <!--  wrapper > editor-p   -->
+                <div class="editor-panel">
+                    
+                    <!--  wrapper > editor-p > filter   -->
+                    <div class="filter">
+                        <label class="title">Filters</label>
+                        
+                        <!--  wrapper > editor-p > filter > Options  -->
+                        <div class="options">
+                            <button id="brightness" class="active">Brightness</button>
+                            <button id="saturation">Saturation</button>
+                            <button id="inversion">Inversion</button>
+                            <button id="grayscale">Grayscale</button>
+                        </div>
+
+                        <!--  wrapper > editor-p > filter > Slider  -->
+                        <div class="slider">
+                            
+                            <!--  wrapper > editor-p > filter > Slider > filter-info  -->
+                            <div class="filter-info">
+                                <p class="name">Brightness</p>
+                                <p class="value">100%</p>
+                            </div>
+                            <input type="range" value="100" min="0" max="200">
+                        </div>
+
+                    </div>
+
+                    <!--  wrapper > editor-p > rotate  -->
+                    <div class="rotate">
+                        <label class="title">Rotate & Flip</label>
+
+                        <!--  wrapper > editor-p > rotate > options -->
+                        <div class="options">
+                            <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                            <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                            <button id="horizontal"><i class="bx bx-reflect-vertical"></i></button>
+                            <button id="vertical"><i class="bx bx-reflect-horizontal"></i></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--  wrapper > preview-img   -->
+                <div class="preview-img">
+                    <img src="https://tidbits.com/uploads/2019/06/Non-destructive-editing-10-900x0-c-default.jpg" alt="preview-img">
+                </div>
+
+            </div>
+
+            <!-- Main > Controls   -->
+            <div class="controls">
+
+                <button class="reset-filter">Reset-Filters</button>
+                
+                <!-- Main > Controls > row -->
+                <div class="row">
+                    <input type="file" class="file-input" accept="image/*" hidden>
+                    <button class="choose-img">Choose Image</button>
+                    <button class="save-img">Save Img</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
