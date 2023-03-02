@@ -1,19 +1,19 @@
-# custom-select-menu
+# Custom-select-menu
 
-# custom-video-player
+# Custom-video-player
 
-# file-downloader
+# File-downloader
 
-# image-comparison-slider
+# Image-comparison-slider
 
-# image-editor-js
+# Image-editor-js
 
-# language_translator
+# Language_translator
 
-# notes-app
+# Notes-app
 
-# palindrome-checker
+# Palindrome-checker
 
-# qr-code-genarator
+# Qr-code-genarator
 
-# qr-code-scanner
+# Qr-code-scanner
